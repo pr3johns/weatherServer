@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 const https = require("https");
+const functions = require('firebase-functions');
 
 function handleForecastResponse() {
     const regex = /^\.([^\.]*)\.\.\.(.*?\.)\s+\n/gsm;
@@ -35,6 +36,9 @@ app.listen(3000, () => {
     req.end();
 
     app.get("/SanDiego", (req, res, next)=>{
+        console.log("New request received");
         res.json(["64F", "4ft"]);
     })
 });
+
+exports.app = functions.https.onRequest(app);
