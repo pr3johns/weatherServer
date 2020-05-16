@@ -3,9 +3,10 @@ var app = express();
 const https = require("https");
 const functions = require('firebase-functions');
 var forecast = {};
+const marineForecastRefreshInterval = 2 * 60 * 60 * 1000; //refresh every two hours
 
-function handleForecastResponse() {
-    /* below regex finds ".TONIGHT...Wind W 10 to" */
+function handleForecastResponse(fullForecast) {
+    /* below regex finds strings like ".TONIGHT...Wind W 10 to" */
     const dailyForecastRegex = /^\.([^\.]*)\.\.\.(.*?\.)\s+\n/gsm;
 
     /* finds the timestamp of the forecast */
@@ -24,11 +25,11 @@ function handleForecastResponse() {
     for(let period=1; (match=dailyForecastRegex.exec(fullForecast)) !== null; period++) {
         forecast.periods.push({name: match[1], period: period, marineSummary: match[2]});
     }
+    console.log("Forecast covers from "+forecast.periods[0].name+" through "+forecast.periods[forecast.periods.length-1].name);
 }
 
-var fullForecast="";
-app.listen(3000, () => {
-    console.log("Starting server...");
+function refreshMarineForecast() {
+    let fullForecast="";
 
     const options = { 
         hostname: 'tgftp.nws.noaa.gov',
@@ -39,14 +40,20 @@ app.listen(3000, () => {
     
     const req = https.request(options, res => {
         res.on('data', chunk=>{
-            console.log('new chunk received...');
             fullForecast+=chunk;
         });
-        res.on('end', ()=>handleForecastResponse());
+        res.on('end', ()=>handleForecastResponse(fullForecast));
     })
     
     req.on('error', error=>console.error(error));
     req.end();
+}
+
+app.listen(3000, () => {
+    console.log("Starting server...");
+
+    refreshMarineForecast();
+    setInterval(refreshMarineForecast, marineForecastRefreshInterval);
 
     app.get("/SanDiego", (req, res, next)=>{
         console.log("New request received");
