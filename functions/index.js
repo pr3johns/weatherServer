@@ -5,7 +5,7 @@ const functions = require('firebase-functions');
 var forecast = {};
 const marineForecastRefreshInterval = 2 * 60 * 60 * 1000; //refresh every two hours
 
-function handleForecastResponse(fullForecast) {
+function handleMarineForecastResponse(fullForecast) {
     /* below regex finds strings like ".TONIGHT...Wind W 10 to" */
     const dailyForecastRegex = /^\.([^\.]*)\.\.\.(.*?\.)\s+\n/gsm;
 
@@ -42,7 +42,7 @@ function refreshMarineForecast() {
         res.on('data', chunk=>{
             fullForecast+=chunk;
         });
-        res.on('end', ()=>handleForecastResponse(fullForecast));
+        res.on('end', ()=>handleMarineForecastResponse(fullForecast));
     })
     
     req.on('error', error=>console.error(error));
