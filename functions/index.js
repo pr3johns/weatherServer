@@ -29,7 +29,7 @@ function handleMarineForecastResponse(fullForecast) {
 
     if((match=forecastTimestampRegex.exec(fullForecast)) !== null) {
         forecast.timeStamp = match[0];
-        console.log("Refreshed marine forecast, updated by NOAA at: " + forecast.timeStamp);
+        console.log("Obtained marine forecast, updated by NOAA at: " + forecast.timeStamp);
         
         //Replace date strings will allow easy merging later
         dayStringReplacements.map((arr)=>fullForecast=fullForecast.replace(arr[0],arr[1]));
@@ -81,10 +81,10 @@ function refreshMarineForecast(onCompletion) {
 app.listen(3000, () => {
     console.log("Starting server...");
 
-    app.get("/SanDiego", (req, res, next)=>{
+    app.get("/marine/SanDiego", (req, res, next)=>{
         console.log("New request received");
         refreshMarineForecast(((lastestForecast)=>res.json(lastestForecast)));
-    })
+    });
 });
 
 exports.app = functions.https.onRequest(app);
