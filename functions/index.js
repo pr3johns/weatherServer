@@ -5,11 +5,24 @@ const functions = require('firebase-functions');
 
 const marineForecastRefreshInterval = 2 * 60 * 60 * 1000; //refresh every two hours
 
+const dayStringReplacements = [
+    [/TODAY/g, "Today"],
+    [/TONIGHT/g, "Tonight"],
+    [/MON/g, "Monday"],
+    [/TUE/g, "Tuesday"],
+    [/WED/g, "Wednesday"],
+    [/THU/g, "Thursday"],
+    [/FRI/g, "Friday"],
+    [/SATURDAY/g, "Saturday"],
+    [/TONIGHT/g, "Tonight"],
+    [/NIGHT/g, "Night"],
+];
+
 function handleMarineForecastResponse(fullForecast) {
     var forecast = {response: "OK"};
     /* below regex finds strings like ".TONIGHT...Wind W 10 to" */
     const dailyForecastRegex = /^\.([^\.]*)\.\.\.(.*?\.)\s+\n/gsm;
-
+    
     /* finds the timestamp of the forecast */
     const forecastTimestampRegex = /[0-9]* [AP]M.*/;
     let match;
@@ -17,8 +30,11 @@ function handleMarineForecastResponse(fullForecast) {
     if((match=forecastTimestampRegex.exec(fullForecast)) !== null) {
         forecast.timeStamp = match[0];
         console.log("Refreshed marine forecast, updated by NOAA at: " + forecast.timeStamp);
+        
+        //Replace date strings will allow easy merging later
+        dayStringReplacements.map((arr)=>fullForecast=fullForecast.replace(arr[0],arr[1]));
+        
         forecast.periods = [];
-
         for(let period=1; (match=dailyForecastRegex.exec(fullForecast)) !== null; period++) {
             forecast.periods.push({name: match[1], period: period, marineSummary: match[2]});
         }

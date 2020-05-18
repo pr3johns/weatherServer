@@ -1,0 +1,1331 @@
+[debug] [2020-05-17T03:22:05.155Z] ----------------------------------------------------------------------
+[debug] [2020-05-17T03:22:05.160Z] Command:       /home/johnsonp/.nvm/versions/node/v14.0.0/bin/node /home/johnsonp/.nvm/versions/node/v14.0.0/bin/firebase serve
+[debug] [2020-05-17T03:22:05.161Z] CLI Version:   8.2.0
+[debug] [2020-05-17T03:22:05.161Z] Platform:      linux
+[debug] [2020-05-17T03:22:05.161Z] Node Version:  v14.0.0
+[debug] [2020-05-17T03:22:05.162Z] Time:          Sat May 16 2020 20:22:05 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-05-17T03:22:05.163Z] ----------------------------------------------------------------------
+[debug] [2020-05-17T03:22:05.163Z] 
+[debug] [2020-05-17T03:22:05.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-17T03:22:05.177Z] > authorizing via signed-in user
+[debug] [2020-05-17T03:22:05.178Z] [iam] checking project weatherserver-3e58b for permissions ["firebase.projects.get"]
+[debug] [2020-05-17T03:22:05.184Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-17T03:22:05.186Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-17T03:22:05.582Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 17 May 2020 03:22:05 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-17T03:22:05.594Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/weatherserver-3e58b:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-17T03:22:06.034Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 17 May 2020 03:22:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=195","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-17T03:22:06.036Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/weatherserver-3e58b  
+ 
+[debug] [2020-05-17T03:22:06.344Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 17 May 2020 03:22:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/johnsonp/src/weatherServer'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "14"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/johnsonp/src/weatherServer/functions" for Cloud Functions...
+[debug] [2020-05-17T03:22:06.433Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:22:06.434Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T03:22:06.435Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:22:06.436Z] [worker-~diagnostic~-0c1806d1-dda8-4b28-8eba-90cb7212d7e9]: Assigning socketPath: /tmp/fire_emu_1251.sock 
+[debug] [2020-05-17T03:22:06.437Z] [worker-~diagnostic~-0c1806d1-dda8-4b28-8eba-90cb7212d7e9]: BUSY 
+[debug] [2020-05-17T03:22:06.976Z] [runtime-status] [1251] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:22:06.982Z] [runtime-status] [1251] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:22:06.987Z] [runtime-status] [1251] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:06.995Z] [runtime-status] [1251] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:07.000Z] [runtime-status] [1251] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:22:07.067Z] [runtime-status] [1251] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:22:07.068Z] [runtime-status] [1251] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:07.069Z] [runtime-status] [1251] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:07.070Z] [runtime-status] [1251] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:07.071Z] [runtime-status] [1251] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /home/johnsonp/src/weatherServer/functions/nwsWeather.js:6
+module exports {
+       ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:1101:16)
+    at Module._compile (internal/modules/cjs/loader.js:1149:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/johnsonp/src/weatherServer/functions/index.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-17T03:22:07.225Z] [worker-~diagnostic~-0c1806d1-dda8-4b28-8eba-90cb7212d7e9]: exited 
+[debug] [2020-05-17T03:22:07.225Z] [worker-~diagnostic~-0c1806d1-dda8-4b28-8eba-90cb7212d7e9]: FINISHED 
+[debug] [2020-05-17T03:22:25.047Z] File /home/johnsonp/src/weatherServer/functions/nwsWeather.js changed, reloading triggers 
+[debug] [2020-05-17T03:22:26.049Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-17T03:22:26.059Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:22:26.059Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T03:22:26.059Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:22:26.060Z] [worker-~diagnostic~-f2fa2561-270f-4e7a-9dd9-445fdf92e3b5]: Assigning socketPath: /tmp/fire_emu_1265.sock 
+[debug] [2020-05-17T03:22:26.060Z] [worker-~diagnostic~-f2fa2561-270f-4e7a-9dd9-445fdf92e3b5]: BUSY 
+[debug] [2020-05-17T03:22:26.300Z] File /home/johnsonp/src/weatherServer/functions/nwsWeather.js changed, reloading triggers 
+[debug] [2020-05-17T03:22:26.501Z] [runtime-status] [1265] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:22:26.503Z] [runtime-status] [1265] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:22:26.505Z] [runtime-status] [1265] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:26.506Z] [runtime-status] [1265] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:26.510Z] [runtime-status] [1265] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:22:26.538Z] [runtime-status] [1265] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:22:26.539Z] [runtime-status] [1265] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:26.539Z] [runtime-status] [1265] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:26.540Z] [runtime-status] [1265] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:26.540Z] [runtime-status] [1265] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /home/johnsonp/src/weatherServer/functions/nwsWeather.js:6
+module.exports {
+               ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:1101:16)
+    at Module._compile (internal/modules/cjs/loader.js:1149:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/johnsonp/src/weatherServer/functions/index.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-17T03:22:26.607Z] [worker-~diagnostic~-f2fa2561-270f-4e7a-9dd9-445fdf92e3b5]: exited 
+[debug] [2020-05-17T03:22:26.608Z] [worker-~diagnostic~-f2fa2561-270f-4e7a-9dd9-445fdf92e3b5]: FINISHED 
+[debug] [2020-05-17T03:22:27.302Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-17T03:22:27.313Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:22:27.314Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T03:22:27.314Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:22:27.315Z] [worker-~diagnostic~-bd4020a5-5643-42a8-a909-70fdcc4f4fec]: Assigning socketPath: /tmp/fire_emu_1279.sock 
+[debug] [2020-05-17T03:22:27.315Z] [worker-~diagnostic~-bd4020a5-5643-42a8-a909-70fdcc4f4fec]: BUSY 
+[debug] [2020-05-17T03:22:27.802Z] File /home/johnsonp/src/weatherServer/functions/nwsWeather.js changed, reloading triggers 
+[debug] [2020-05-17T03:22:27.861Z] [runtime-status] [1279] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:22:27.866Z] [runtime-status] [1279] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:22:27.870Z] [runtime-status] [1279] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:27.872Z] [runtime-status] [1279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:27.883Z] [runtime-status] [1279] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:22:27.949Z] [runtime-status] [1279] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:22:27.951Z] [runtime-status] [1279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:27.952Z] [runtime-status] [1279] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:27.953Z] [runtime-status] [1279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:27.954Z] [runtime-status] [1279] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /home/johnsonp/src/weatherServer/functions/nwsWeather.js:6
+module.exports {
+               ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:1101:16)
+    at Module._compile (internal/modules/cjs/loader.js:1149:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/johnsonp/src/weatherServer/functions/index.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-17T03:22:28.103Z] [worker-~diagnostic~-bd4020a5-5643-42a8-a909-70fdcc4f4fec]: exited 
+[debug] [2020-05-17T03:22:28.104Z] [worker-~diagnostic~-bd4020a5-5643-42a8-a909-70fdcc4f4fec]: FINISHED 
+[debug] [2020-05-17T03:22:28.805Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-17T03:22:28.816Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:22:28.817Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T03:22:28.817Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:22:28.818Z] [worker-~diagnostic~-34281363-030f-4180-8f3b-40df022da9b0]: Assigning socketPath: /tmp/fire_emu_1286.sock 
+[debug] [2020-05-17T03:22:28.818Z] [worker-~diagnostic~-34281363-030f-4180-8f3b-40df022da9b0]: BUSY 
+[debug] [2020-05-17T03:22:29.304Z] [runtime-status] [1286] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:22:29.310Z] [runtime-status] [1286] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:22:29.321Z] [runtime-status] [1286] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:29.322Z] [runtime-status] [1286] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:29.327Z] [runtime-status] [1286] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:22:29.394Z] [runtime-status] [1286] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:22:29.395Z] [runtime-status] [1286] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:29.396Z] [runtime-status] [1286] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:29.397Z] [runtime-status] [1286] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:29.398Z] [runtime-status] [1286] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /home/johnsonp/src/weatherServer/functions/nwsWeather.js:6
+module.exports {
+               ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:1101:16)
+    at Module._compile (internal/modules/cjs/loader.js:1149:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/johnsonp/src/weatherServer/functions/index.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-17T03:22:29.546Z] [worker-~diagnostic~-34281363-030f-4180-8f3b-40df022da9b0]: exited 
+[debug] [2020-05-17T03:22:29.546Z] [worker-~diagnostic~-34281363-030f-4180-8f3b-40df022da9b0]: FINISHED 
+[debug] [2020-05-17T03:22:37.552Z] File /home/johnsonp/src/weatherServer/functions/nwsWeather.js changed, reloading triggers 
+[debug] [2020-05-17T03:22:38.553Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-17T03:22:38.566Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:22:38.567Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T03:22:38.567Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:22:38.568Z] [worker-~diagnostic~-6cc9860a-d5e6-4ccb-8064-834f5e1d5c67]: Assigning socketPath: /tmp/fire_emu_1300.sock 
+[debug] [2020-05-17T03:22:38.568Z] [worker-~diagnostic~-6cc9860a-d5e6-4ccb-8064-834f5e1d5c67]: BUSY 
+[debug] [2020-05-17T03:22:39.090Z] [runtime-status] [1300] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:22:39.096Z] [runtime-status] [1300] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:22:39.097Z] [runtime-status] [1300] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:39.097Z] [runtime-status] [1300] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:39.105Z] [runtime-status] [1300] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:22:39.162Z] [runtime-status] [1300] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:22:39.163Z] [runtime-status] [1300] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:39.164Z] [runtime-status] [1300] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:39.165Z] [runtime-status] [1300] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:39.166Z] [runtime-status] [1300] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[info] ✔  functions[app]: http function initialized (http://localhost:5000/weatherserver-3e58b/us-central1/app).
+[debug] [2020-05-17T03:22:39.282Z] [worker-~diagnostic~-6cc9860a-d5e6-4ccb-8064-834f5e1d5c67]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T03:22:53.488Z] ----------------------------------------------------------------------
+[debug] [2020-05-17T03:22:53.492Z] Command:       /home/johnsonp/.nvm/versions/node/v14.0.0/bin/node /home/johnsonp/.nvm/versions/node/v14.0.0/bin/firebase serve
+[debug] [2020-05-17T03:22:53.493Z] CLI Version:   8.2.0
+[debug] [2020-05-17T03:22:53.494Z] Platform:      linux
+[debug] [2020-05-17T03:22:53.494Z] Node Version:  v14.0.0
+[debug] [2020-05-17T03:22:53.495Z] Time:          Sat May 16 2020 20:22:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-05-17T03:22:53.495Z] ----------------------------------------------------------------------
+[debug] [2020-05-17T03:22:53.495Z] 
+[debug] [2020-05-17T03:22:53.509Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-17T03:22:53.510Z] > authorizing via signed-in user
+[debug] [2020-05-17T03:22:53.510Z] [iam] checking project weatherserver-3e58b for permissions ["firebase.projects.get"]
+[debug] [2020-05-17T03:22:53.516Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/weatherserver-3e58b:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-17T03:22:53.873Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 17 May 2020 03:22:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=188","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-17T03:22:53.876Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/weatherserver-3e58b  
+ 
+[debug] [2020-05-17T03:22:54.091Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 17 May 2020 03:22:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/home/johnsonp/src/weatherServer'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "14"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/johnsonp/src/weatherServer/functions" for Cloud Functions...
+[debug] [2020-05-17T03:22:54.182Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:22:54.183Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T03:22:54.184Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:22:54.185Z] [worker-~diagnostic~-6ef1c91d-9947-44f0-add1-519536520252]: Assigning socketPath: /tmp/fire_emu_1320.sock 
+[debug] [2020-05-17T03:22:54.186Z] [worker-~diagnostic~-6ef1c91d-9947-44f0-add1-519536520252]: BUSY 
+[debug] [2020-05-17T03:22:54.716Z] [runtime-status] [1320] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:22:54.718Z] [runtime-status] [1320] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:22:54.724Z] [runtime-status] [1320] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:54.731Z] [runtime-status] [1320] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:54.736Z] [runtime-status] [1320] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:22:54.802Z] [runtime-status] [1320] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:22:54.803Z] [runtime-status] [1320] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:54.804Z] [runtime-status] [1320] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:22:54.805Z] [runtime-status] [1320] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:22:54.806Z] [runtime-status] [1320] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[info] ✔  functions[app]: http function initialized (http://localhost:5000/weatherserver-3e58b/us-central1/app).
+[debug] [2020-05-17T03:22:54.933Z] [worker-~diagnostic~-6ef1c91d-9947-44f0-add1-519536520252]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T03:23:41.917Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T03:23:42.919Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T03:23:42.919Z] [worker-~diagnostic~-6ef1c91d-9947-44f0-add1-519536520252]: FINISHING 
+[debug] [2020-05-17T03:23:42.930Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:23:42.931Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T03:23:42.931Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:23:42.932Z] [worker-~diagnostic~-e7c7cc85-66f8-43b1-b1fe-15c21b1d9153]: Assigning socketPath: /tmp/fire_emu_1344.sock 
+[debug] [2020-05-17T03:23:42.932Z] [worker-~diagnostic~-e7c7cc85-66f8-43b1-b1fe-15c21b1d9153]: BUSY 
+[debug] [2020-05-17T03:23:42.935Z] [worker-~diagnostic~-6ef1c91d-9947-44f0-add1-519536520252]: exited 
+[debug] [2020-05-17T03:23:42.936Z] [worker-~diagnostic~-6ef1c91d-9947-44f0-add1-519536520252]: FINISHED 
+[debug] [2020-05-17T03:23:43.215Z] [runtime-status] [1344] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:23:43.218Z] [runtime-status] [1344] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:23:43.218Z] [runtime-status] [1344] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:23:43.219Z] [runtime-status] [1344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:23:43.224Z] [runtime-status] [1344] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:23:43.252Z] [runtime-status] [1344] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:23:43.253Z] [runtime-status] [1344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:23:43.254Z] [runtime-status] [1344] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:23:43.254Z] [runtime-status] [1344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:23:43.255Z] [runtime-status] [1344] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T03:23:43.310Z] [worker-~diagnostic~-e7c7cc85-66f8-43b1-b1fe-15c21b1d9153]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  ReferenceError: https is not defined {"user":"ReferenceError: https is not defined"}
+[info] >      at Object.getNWSForecast (/home/johnsonp/src/weatherServer/functions/nwsWeather.js:18:21) {"user":"    at Object.getNWSForecast (/home/johnsonp/src/weatherServer/functions/nwsWeather.js:18:21)"}
+[info] >      at /home/johnsonp/src/weatherServer/functions/index.js:71:20 {"user":"    at /home/johnsonp/src/weatherServer/functions/index.js:71:20"}
+[info] >      at Layer.handle [as handle_request] (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/layer.js:95:5)"}
+[info] >      at next (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/route.js:137:13) {"user":"    at next (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/route.js:137:13)"}
+[info] >      at Route.dispatch (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/route.js:112:3) {"user":"    at Route.dispatch (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/route.js:112:3)"}
+[info] >      at Layer.handle [as handle_request] (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/layer.js:95:5)"}
+[info] >      at /home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/index.js:281:22 {"user":"    at /home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/index.js:281:22"}
+[info] >      at Function.process_params (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/index.js:335:12) {"user":"    at Function.process_params (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/index.js:335:12)"}
+[info] >      at next (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/index.js:275:10) {"user":"    at next (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/router/index.js:275:10)"}
+[info] >      at expressInit (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/middleware/init.js:40:5) {"user":"    at expressInit (/home/johnsonp/src/weatherServer/functions/node_modules/express/lib/middleware/init.js:40:5)"}
+[debug] [2020-05-17T03:24:16.554Z] File /home/johnsonp/src/weatherServer/functions/nwsWeather.js changed, reloading triggers 
+[debug] [2020-05-17T03:24:17.556Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T03:24:17.556Z] [worker-~diagnostic~-e7c7cc85-66f8-43b1-b1fe-15c21b1d9153]: FINISHING 
+[debug] [2020-05-17T03:24:17.557Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T03:24:17.569Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:24:17.570Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T03:24:17.570Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:24:17.571Z] [worker-~diagnostic~-9aaf5827-8bc3-4828-8e63-2642528fc0ee]: Assigning socketPath: /tmp/fire_emu_1367.sock 
+[debug] [2020-05-17T03:24:17.571Z] [worker-~diagnostic~-9aaf5827-8bc3-4828-8e63-2642528fc0ee]: BUSY 
+[debug] [2020-05-17T03:24:17.574Z] [worker-~diagnostic~-e7c7cc85-66f8-43b1-b1fe-15c21b1d9153]: exited 
+[debug] [2020-05-17T03:24:17.575Z] [worker-~diagnostic~-e7c7cc85-66f8-43b1-b1fe-15c21b1d9153]: FINISHED 
+[debug] [2020-05-17T03:24:18.071Z] [runtime-status] [1367] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:24:18.076Z] [runtime-status] [1367] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:24:18.083Z] [runtime-status] [1367] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:24:18.092Z] [runtime-status] [1367] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:24:18.098Z] [runtime-status] [1367] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:24:18.165Z] [runtime-status] [1367] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:24:18.166Z] [runtime-status] [1367] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:24:18.168Z] [runtime-status] [1367] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:24:18.168Z] [runtime-status] [1367] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:24:18.169Z] [runtime-status] [1367] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T03:24:18.299Z] [worker-~diagnostic~-9aaf5827-8bc3-4828-8e63-2642528fc0ee]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  string {"user":"string"}
+[info] >  <HTML><HEAD> {"user":"<HTML><HEAD>"}
+[info] >  <TITLE>Access Denied</TITLE> {"user":"<TITLE>Access Denied</TITLE>"}
+[info] >  </HEAD><BODY> {"user":"</HEAD><BODY>"}
+[info] >  <H1>Access Denied</H1> {"user":"<H1>Access Denied</H1>"}
+[info] >    {"user":" "}
+[info] >  You don't have permission to access "http&#58;&#47;&#47;api&#46;weather&#46;gov&#47;gridpoints&#47;SGX&#47;44&#44;9&#47;forecast" on this server.<P> {"user":"You don't have permission to access \"http&#58;&#47;&#47;api&#46;weather&#46;gov&#47;gridpoints&#47;SGX&#47;44&#44;9&#47;forecast\" on this server.<P>"}
+[info] >  Reference&#32;&#35;18&#46;6756268&#46;1589685863&#46;5d8ae7db {"user":"Reference&#32;&#35;18&#46;6756268&#46;1589685863&#46;5d8ae7db"}
+[info] >  </BODY> {"user":"</BODY>"}
+[info] >  </HTML> {"user":"</HTML>"}
+[info] >   {"user":""}
+[info] >  Refreshed marine forecast, updated by NOAA at: 137 PM PDT Sat May 16 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 137 PM PDT Sat May 16 2020"}
+[info] >  Forecast covers from TONIGHT through THU NIGHT {"user":"Forecast covers from TONIGHT through THU NIGHT"}
+[debug] [2020-05-17T03:25:10.519Z] File /home/johnsonp/src/weatherServer/functions/nwsWeather.js changed, reloading triggers 
+[debug] [2020-05-17T03:25:11.520Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T03:25:11.520Z] [worker-~diagnostic~-9aaf5827-8bc3-4828-8e63-2642528fc0ee]: FINISHING 
+[debug] [2020-05-17T03:25:11.521Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T03:25:11.534Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T03:25:11.535Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T03:25:11.535Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T03:25:11.535Z] [worker-~diagnostic~-1e8ff105-962f-4726-b92c-59cf280743f5]: Assigning socketPath: /tmp/fire_emu_1392.sock 
+[debug] [2020-05-17T03:25:11.536Z] [worker-~diagnostic~-1e8ff105-962f-4726-b92c-59cf280743f5]: BUSY 
+[debug] [2020-05-17T03:25:11.538Z] [worker-~diagnostic~-9aaf5827-8bc3-4828-8e63-2642528fc0ee]: exited 
+[debug] [2020-05-17T03:25:11.538Z] [worker-~diagnostic~-9aaf5827-8bc3-4828-8e63-2642528fc0ee]: FINISHED 
+[debug] [2020-05-17T03:25:11.914Z] [runtime-status] [1392] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T03:25:11.917Z] [runtime-status] [1392] Disabled runtime features: undefined 
+[debug] [2020-05-17T03:25:11.922Z] [runtime-status] [1392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:25:11.924Z] [runtime-status] [1392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:25:11.930Z] [runtime-status] [1392] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T03:25:11.973Z] [runtime-status] [1392] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T03:25:11.973Z] [runtime-status] [1392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:25:11.974Z] [runtime-status] [1392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T03:25:11.975Z] [runtime-status] [1392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T03:25:11.976Z] [runtime-status] [1392] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T03:25:12.100Z] [worker-~diagnostic~-1e8ff105-962f-4726-b92c-59cf280743f5]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  string {"user":"string"}
+[info] >  <HTML><HEAD> {"user":"<HTML><HEAD>"}
+[info] >  <TITLE>Access Denied</TITLE> {"user":"<TITLE>Access Denied</TITLE>"}
+[info] >  </HEAD><BODY> {"user":"</HEAD><BODY>"}
+[info] >  <H1>Access Denied</H1> {"user":"<H1>Access Denied</H1>"}
+[info] >    {"user":" "}
+[info] >  You don't have permission to access "http&#58;&#47;&#47;api&#46;weather&#46;gov&#47;gridpoints&#47;SGX&#47;44&#44;9&#47;forecast" on this server.<P> {"user":"You don't have permission to access \"http&#58;&#47;&#47;api&#46;weather&#46;gov&#47;gridpoints&#47;SGX&#47;44&#44;9&#47;forecast\" on this server.<P>"}
+[info] >  Reference&#32;&#35;18&#46;8cc3ce17&#46;1589685915&#46;1563c67c {"user":"Reference&#32;&#35;18&#46;8cc3ce17&#46;1589685915&#46;1563c67c"}
+[info] >  </BODY> {"user":"</BODY>"}
+[info] >  </HTML> {"user":"</HTML>"}
+[info] >   {"user":""}
+[info] >  Refreshed marine forecast, updated by NOAA at: 137 PM PDT Sat May 16 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 137 PM PDT Sat May 16 2020"}
+[info] >  Forecast covers from TONIGHT through THU NIGHT {"user":"Forecast covers from TONIGHT through THU NIGHT"}
+[debug] [2020-05-17T16:01:06.250Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:01:07.251Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:01:07.252Z] [worker-~diagnostic~-1e8ff105-962f-4726-b92c-59cf280743f5]: FINISHING 
+[debug] [2020-05-17T16:01:07.252Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:01:07.259Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:01:07.260Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:01:07.260Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:01:07.260Z] [worker-~diagnostic~-e1a69b08-457e-4b26-9341-fd4e04eae63f]: Assigning socketPath: /tmp/fire_emu_1915.sock 
+[debug] [2020-05-17T16:01:07.260Z] [worker-~diagnostic~-e1a69b08-457e-4b26-9341-fd4e04eae63f]: BUSY 
+[debug] [2020-05-17T16:01:07.262Z] [worker-~diagnostic~-1e8ff105-962f-4726-b92c-59cf280743f5]: exited 
+[debug] [2020-05-17T16:01:07.262Z] [worker-~diagnostic~-1e8ff105-962f-4726-b92c-59cf280743f5]: FINISHED 
+[debug] [2020-05-17T16:01:07.801Z] [runtime-status] [1915] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:01:07.807Z] [runtime-status] [1915] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:01:07.819Z] [runtime-status] [1915] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:01:07.821Z] [runtime-status] [1915] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:01:07.825Z] [runtime-status] [1915] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:01:07.898Z] [runtime-status] [1915] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:01:07.899Z] [runtime-status] [1915] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:01:07.901Z] [runtime-status] [1915] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:01:07.901Z] [runtime-status] [1915] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:01:07.902Z] [runtime-status] [1915] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:01:08.039Z] [worker-~diagnostic~-e1a69b08-457e-4b26-9341-fd4e04eae63f]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:11:27.880Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:11:28.881Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:11:28.882Z] [worker-~diagnostic~-e1a69b08-457e-4b26-9341-fd4e04eae63f]: FINISHING 
+[debug] [2020-05-17T16:11:28.883Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:11:28.894Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:11:28.895Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:11:28.895Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:11:28.896Z] [worker-~diagnostic~-0ef3efa9-e3e4-4291-990f-c1465a4e889f]: Assigning socketPath: /tmp/fire_emu_1936.sock 
+[debug] [2020-05-17T16:11:28.896Z] [worker-~diagnostic~-0ef3efa9-e3e4-4291-990f-c1465a4e889f]: BUSY 
+[debug] [2020-05-17T16:11:28.898Z] [worker-~diagnostic~-e1a69b08-457e-4b26-9341-fd4e04eae63f]: exited 
+[debug] [2020-05-17T16:11:28.898Z] [worker-~diagnostic~-e1a69b08-457e-4b26-9341-fd4e04eae63f]: FINISHED 
+[debug] [2020-05-17T16:11:29.359Z] [runtime-status] [1936] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:11:29.361Z] [runtime-status] [1936] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:11:29.367Z] [runtime-status] [1936] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:11:29.374Z] [runtime-status] [1936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:11:29.376Z] [runtime-status] [1936] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:11:29.409Z] [runtime-status] [1936] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:11:29.410Z] [runtime-status] [1936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:11:29.411Z] [runtime-status] [1936] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:11:29.411Z] [runtime-status] [1936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:11:29.413Z] [runtime-status] [1936] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:11:29.471Z] [worker-~diagnostic~-0ef3efa9-e3e4-4291-990f-c1465a4e889f]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:11:29.690Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:11:30.694Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:11:30.694Z] [worker-~diagnostic~-0ef3efa9-e3e4-4291-990f-c1465a4e889f]: FINISHING 
+[debug] [2020-05-17T16:11:30.695Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:11:30.702Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:11:30.702Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:11:30.702Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:11:30.702Z] [worker-~diagnostic~-d5b9f70e-f5d7-419c-a7c5-ea4f7ee18b13]: Assigning socketPath: /tmp/fire_emu_1943.sock 
+[debug] [2020-05-17T16:11:30.703Z] [worker-~diagnostic~-d5b9f70e-f5d7-419c-a7c5-ea4f7ee18b13]: BUSY 
+[debug] [2020-05-17T16:11:30.704Z] [worker-~diagnostic~-0ef3efa9-e3e4-4291-990f-c1465a4e889f]: exited 
+[debug] [2020-05-17T16:11:30.704Z] [worker-~diagnostic~-0ef3efa9-e3e4-4291-990f-c1465a4e889f]: FINISHED 
+[debug] [2020-05-17T16:11:31.150Z] [runtime-status] [1943] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:11:31.156Z] [runtime-status] [1943] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:11:31.168Z] [runtime-status] [1943] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:11:31.169Z] [runtime-status] [1943] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:11:31.173Z] [runtime-status] [1943] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:11:31.241Z] [runtime-status] [1943] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:11:31.242Z] [runtime-status] [1943] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:11:31.244Z] [runtime-status] [1943] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:11:31.245Z] [runtime-status] [1943] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:11:31.245Z] [runtime-status] [1943] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:11:31.372Z] [worker-~diagnostic~-d5b9f70e-f5d7-419c-a7c5-ea4f7ee18b13]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:13:26.418Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:13:27.419Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:13:27.419Z] [worker-~diagnostic~-d5b9f70e-f5d7-419c-a7c5-ea4f7ee18b13]: FINISHING 
+[debug] [2020-05-17T16:13:27.420Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:13:27.427Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:13:27.427Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:13:27.427Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:13:27.428Z] [worker-~diagnostic~-a04a2184-911b-47f8-a2c1-8e07ee5e5002]: Assigning socketPath: /tmp/fire_emu_1957.sock 
+[debug] [2020-05-17T16:13:27.428Z] [worker-~diagnostic~-a04a2184-911b-47f8-a2c1-8e07ee5e5002]: BUSY 
+[debug] [2020-05-17T16:13:27.429Z] [worker-~diagnostic~-d5b9f70e-f5d7-419c-a7c5-ea4f7ee18b13]: exited 
+[debug] [2020-05-17T16:13:27.429Z] [worker-~diagnostic~-d5b9f70e-f5d7-419c-a7c5-ea4f7ee18b13]: FINISHED 
+[debug] [2020-05-17T16:13:27.717Z] [runtime-status] [1957] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:13:27.719Z] [runtime-status] [1957] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:13:27.721Z] [runtime-status] [1957] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:13:27.722Z] [runtime-status] [1957] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:27.724Z] [runtime-status] [1957] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:13:27.756Z] [runtime-status] [1957] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:13:27.757Z] [runtime-status] [1957] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:27.757Z] [runtime-status] [1957] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:13:27.758Z] [runtime-status] [1957] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:27.758Z] [runtime-status] [1957] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:13:27.813Z] [worker-~diagnostic~-a04a2184-911b-47f8-a2c1-8e07ee5e5002]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:13:30.258Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:13:31.261Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:13:31.263Z] [worker-~diagnostic~-a04a2184-911b-47f8-a2c1-8e07ee5e5002]: FINISHING 
+[debug] [2020-05-17T16:13:31.265Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:13:31.308Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:13:31.310Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:13:31.312Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:13:31.314Z] [worker-~diagnostic~-e6015431-1f1f-4f15-8091-9dd57bf37c90]: Assigning socketPath: /tmp/fire_emu_1971.sock 
+[debug] [2020-05-17T16:13:31.317Z] [worker-~diagnostic~-e6015431-1f1f-4f15-8091-9dd57bf37c90]: BUSY 
+[debug] [2020-05-17T16:13:31.325Z] [worker-~diagnostic~-a04a2184-911b-47f8-a2c1-8e07ee5e5002]: exited 
+[debug] [2020-05-17T16:13:31.337Z] [worker-~diagnostic~-a04a2184-911b-47f8-a2c1-8e07ee5e5002]: FINISHED 
+[debug] [2020-05-17T16:13:31.887Z] [runtime-status] [1971] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:13:31.891Z] [runtime-status] [1971] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:13:31.896Z] [runtime-status] [1971] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:13:31.898Z] [runtime-status] [1971] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:31.909Z] [runtime-status] [1971] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:13:31.979Z] [runtime-status] [1971] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:13:31.980Z] [runtime-status] [1971] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:31.981Z] [runtime-status] [1971] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:13:31.982Z] [runtime-status] [1971] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:31.983Z] [runtime-status] [1971] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:13:32.112Z] [worker-~diagnostic~-e6015431-1f1f-4f15-8091-9dd57bf37c90]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:13:43.429Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:13:44.430Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:13:44.430Z] [worker-~diagnostic~-e6015431-1f1f-4f15-8091-9dd57bf37c90]: FINISHING 
+[debug] [2020-05-17T16:13:44.430Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:13:44.437Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:13:44.438Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:13:44.438Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:13:44.438Z] [worker-~diagnostic~-de7b3cce-0b56-495c-8c94-391561fab029]: Assigning socketPath: /tmp/fire_emu_1985.sock 
+[debug] [2020-05-17T16:13:44.438Z] [worker-~diagnostic~-de7b3cce-0b56-495c-8c94-391561fab029]: BUSY 
+[debug] [2020-05-17T16:13:44.439Z] [worker-~diagnostic~-e6015431-1f1f-4f15-8091-9dd57bf37c90]: exited 
+[debug] [2020-05-17T16:13:44.439Z] [worker-~diagnostic~-e6015431-1f1f-4f15-8091-9dd57bf37c90]: FINISHED 
+[debug] [2020-05-17T16:13:44.721Z] [runtime-status] [1985] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:13:44.723Z] [runtime-status] [1985] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:13:44.727Z] [runtime-status] [1985] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:13:44.732Z] [runtime-status] [1985] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:44.735Z] [runtime-status] [1985] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:13:44.770Z] [runtime-status] [1985] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:13:44.770Z] [runtime-status] [1985] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:44.771Z] [runtime-status] [1985] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:13:44.772Z] [runtime-status] [1985] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:13:44.772Z] [runtime-status] [1985] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:13:44.832Z] [worker-~diagnostic~-de7b3cce-0b56-495c-8c94-391561fab029]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020"}
+[info] >  Forecast covers from TODAY through THU NIGHT {"user":"Forecast covers from TODAY through THU NIGHT"}
+[debug] [2020-05-17T16:14:49.604Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:14:50.609Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:14:50.611Z] [worker-~diagnostic~-de7b3cce-0b56-495c-8c94-391561fab029]: FINISHING 
+[debug] [2020-05-17T16:14:50.613Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:14:50.654Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:14:50.657Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:14:50.658Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:14:50.660Z] [worker-~diagnostic~-25319eb8-9e0c-4434-b284-cb50518fe60b]: Assigning socketPath: /tmp/fire_emu_2010.sock 
+[debug] [2020-05-17T16:14:50.661Z] [worker-~diagnostic~-25319eb8-9e0c-4434-b284-cb50518fe60b]: BUSY 
+[debug] [2020-05-17T16:14:50.674Z] [worker-~diagnostic~-de7b3cce-0b56-495c-8c94-391561fab029]: exited 
+[debug] [2020-05-17T16:14:50.675Z] [worker-~diagnostic~-de7b3cce-0b56-495c-8c94-391561fab029]: FINISHED 
+[debug] [2020-05-17T16:14:51.040Z] [runtime-status] [2010] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:14:51.042Z] [runtime-status] [2010] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:14:51.044Z] [runtime-status] [2010] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:14:51.047Z] [runtime-status] [2010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:14:51.050Z] [runtime-status] [2010] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:14:51.079Z] [runtime-status] [2010] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:14:51.079Z] [runtime-status] [2010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:14:51.079Z] [runtime-status] [2010] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:14:51.079Z] [runtime-status] [2010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:14:51.079Z] [runtime-status] [2010] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /home/johnsonp/src/weatherServer/functions/index.js:38
+                fullForecast.replace(arr[0],arr[1])); 
+                                                   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1101:16)
+    at Module._compile (internal/modules/cjs/loader.js:1149:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /home/johnsonp/.nvm/versions/node/v14.0.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/johnsonp/.nvm/versions/node/v14.0.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-17T16:14:51.097Z] [worker-~diagnostic~-25319eb8-9e0c-4434-b284-cb50518fe60b]: exited 
+[debug] [2020-05-17T16:14:51.098Z] [worker-~diagnostic~-25319eb8-9e0c-4434-b284-cb50518fe60b]: FINISHED 
+[debug] [2020-05-17T16:15:05.409Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:15:06.410Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0 
+[debug] [2020-05-17T16:15:06.423Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:15:06.424Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T16:15:06.424Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:15:06.425Z] [worker-~diagnostic~-b559c039-a9c1-4b01-85bc-bd77ac3e56b5]: Assigning socketPath: /tmp/fire_emu_2031.sock 
+[debug] [2020-05-17T16:15:06.425Z] [worker-~diagnostic~-b559c039-a9c1-4b01-85bc-bd77ac3e56b5]: BUSY 
+[debug] [2020-05-17T16:15:06.966Z] [runtime-status] [2031] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:15:06.968Z] [runtime-status] [2031] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:15:06.972Z] [runtime-status] [2031] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:15:06.973Z] [runtime-status] [2031] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:15:06.979Z] [runtime-status] [2031] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:15:07.026Z] [runtime-status] [2031] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:15:07.027Z] [runtime-status] [2031] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:15:07.028Z] [runtime-status] [2031] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:15:07.030Z] [runtime-status] [2031] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:15:07.030Z] [runtime-status] [2031] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:15:07.157Z] [worker-~diagnostic~-b559c039-a9c1-4b01-85bc-bd77ac3e56b5]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020"}
+[info] >  TODAY {"user":"TODAY"}
+[info] >  TONIGHT {"user":"TONIGHT"}
+[info] >  MON {"user":"MON"}
+[info] >  TUE {"user":"TUE"}
+[info] >  WED {"user":"WED"}
+[info] >  THU {"user":"THU"}
+[info] >  FRI {"user":"FRI"}
+[info] >  SATURDAY {"user":"SATURDAY"}
+[info] >  TONIGHT {"user":"TONIGHT"}
+[info] >  NIGHT {"user":"NIGHT"}
+[info] >  Forecast covers from TODAY through THU NIGHT {"user":"Forecast covers from TODAY through THU NIGHT"}
+[debug] [2020-05-17T16:15:54.930Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:15:55.931Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:15:55.931Z] [worker-~diagnostic~-b559c039-a9c1-4b01-85bc-bd77ac3e56b5]: FINISHING 
+[debug] [2020-05-17T16:15:55.947Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:15:55.948Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:15:55.948Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:15:55.949Z] [worker-~diagnostic~-02cc52e7-c0ff-4e04-ade7-33ec5e534405]: Assigning socketPath: /tmp/fire_emu_2056.sock 
+[debug] [2020-05-17T16:15:55.949Z] [worker-~diagnostic~-02cc52e7-c0ff-4e04-ade7-33ec5e534405]: BUSY 
+[debug] [2020-05-17T16:15:55.950Z] [worker-~diagnostic~-b559c039-a9c1-4b01-85bc-bd77ac3e56b5]: exited 
+[debug] [2020-05-17T16:15:55.951Z] [worker-~diagnostic~-b559c039-a9c1-4b01-85bc-bd77ac3e56b5]: FINISHED 
+[debug] [2020-05-17T16:15:56.503Z] [runtime-status] [2056] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:15:56.509Z] [runtime-status] [2056] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:15:56.519Z] [runtime-status] [2056] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:15:56.521Z] [runtime-status] [2056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:15:56.525Z] [runtime-status] [2056] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:15:56.592Z] [runtime-status] [2056] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:15:56.594Z] [runtime-status] [2056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:15:56.595Z] [runtime-status] [2056] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:15:56.596Z] [runtime-status] [2056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:15:56.596Z] [runtime-status] [2056] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:15:56.726Z] [worker-~diagnostic~-02cc52e7-c0ff-4e04-ade7-33ec5e534405]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020"}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Expires:202005180115;;301835 {"user":"Expires:202005180115;;301835"}
+[info] >  FZUS56 KSGX 170918 {"user":"FZUS56 KSGX 170918"}
+[info] >  CWFSGX {"user":"CWFSGX"}
+[info] >   {"user":""}
+[info] >  Coastal Waters Forecast {"user":"Coastal Waters Forecast"}
+[info] >  National Weather Service San Diego CA {"user":"National Weather Service San Diego CA"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  PZZ750-180115- {"user":"PZZ750-180115-"}
+[info] >  Coastal Waters from San Mateo Point to the Mexican Border and out {"user":"Coastal Waters from San Mateo Point to the Mexican Border and out"}
+[info] >  to 30 nm- {"user":"to 30 nm-"}
+[info] >  218 AM PDT Sun May 17 2020 {"user":"218 AM PDT Sun May 17 2020"}
+[info] >   {"user":""}
+[info] >  .TODAY...Wind variable less than 10 kt...becoming W 10 kt with {"user":".TODAY...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds.  {"user":"swell W 3 to 4 ft at 8 seconds and SW 2 to 3 ft at 17 seconds. "}
+[info] >  .TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind {"user":".TONIGHT...Wind NW 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft {"user":"waves 2 ft or less. Mixed swell W 3 ft at 10 seconds and SW 3 ft"}
+[info] >  at 17 seconds.  {"user":"at 17 seconds. "}
+[info] >  .MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W {"user":".MON...Wind W 10 to 15 kt. Wind waves 2 ft or less. Mixed swell W"}
+[info] >  3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance {"user":"3 to 4 ft at 14 seconds and SW 3 ft at 16 seconds. Slight chance"}
+[info] >  of rain.  {"user":"of rain. "}
+[info] >  .MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the {"user":".MON NIGHT...Wind NW 10 to 15 kt. Wind waves 3 ft in the"}
+[info] >  evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at {"user":"evening...becoming 2 ft or less. Mixed swell W 3 to 5 ft at"}
+[info] >  13 seconds and SW 3 ft at 16 seconds.  {"user":"13 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft. {"user":".TUE...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves 3 ft."}
+[info] >  Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds.  {"user":"Mixed swell W 3 to 5 ft at 12 seconds and SW 3 ft at 16 seconds. "}
+[info] >  .TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves {"user":".TUE NIGHT...Wind W 10 to 15 kt with gusts to 20 kt. Wind waves"}
+[info] >  3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to {"user":"3 ft in the evening...becoming 2 ft or less. Mixed swell W 4 to"}
+[info] >  5 ft and SW 2 to 3 ft.  {"user":"5 ft and SW 2 to 3 ft. "}
+[info] >  .WED...Wind variable less than 10 kt...becoming W 10 kt with {"user":".WED...Wind variable less than 10 kt...becoming W 10 kt with"}
+[info] >  gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed {"user":"gusts to 15 kt in the afternoon. Wind waves 2 ft or less. Mixed"}
+[info] >  swell W 2 to 4 ft and SW 2 to 3 ft.  {"user":"swell W 2 to 4 ft and SW 2 to 3 ft. "}
+[info] >  .WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind {"user":".WED NIGHT...Wind W 10 kt. Gusts to 15 kt in the evening. Wind"}
+[info] >  waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft.  {"user":"waves 2 ft or less. Mixed swell W 3 to 4 ft and S 2 ft. "}
+[info] >  .THU...Wind variable less than 10 kt...becoming W 10 kt in the {"user":".THU...Wind variable less than 10 kt...becoming W 10 kt in the"}
+[info] >  afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S {"user":"afternoon. Wind waves 2 ft or less. Mixed swell W 3 to 4 ft and S"}
+[info] >  2 ft.  {"user":"2 ft. "}
+[info] >  .THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or {"user":".THU NIGHT...Wind variable less than 10 kt. Wind waves 2 ft or"}
+[info] >  less. Mixed swell W 3 ft and S 2 ft.   {"user":"less. Mixed swell W 3 ft and S 2 ft.  "}
+[info] >   {"user":""}
+[info] >  $$ {"user":"$$"}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >   {"user":""}
+[info] >  Forecast covers from TODAY through THU NIGHT {"user":"Forecast covers from TODAY through THU NIGHT"}
+[debug] [2020-05-17T16:17:13.373Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:17:14.379Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:17:14.379Z] [worker-~diagnostic~-02cc52e7-c0ff-4e04-ade7-33ec5e534405]: FINISHING 
+[debug] [2020-05-17T16:17:14.379Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:17:14.387Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:17:14.388Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:17:14.388Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:17:14.388Z] [worker-~diagnostic~-56e3e0cb-a842-40c0-af93-20e8332ad5fb]: Assigning socketPath: /tmp/fire_emu_2081.sock 
+[debug] [2020-05-17T16:17:14.388Z] [worker-~diagnostic~-56e3e0cb-a842-40c0-af93-20e8332ad5fb]: BUSY 
+[debug] [2020-05-17T16:17:14.392Z] [worker-~diagnostic~-02cc52e7-c0ff-4e04-ade7-33ec5e534405]: exited 
+[debug] [2020-05-17T16:17:14.393Z] [worker-~diagnostic~-02cc52e7-c0ff-4e04-ade7-33ec5e534405]: FINISHED 
+[debug] [2020-05-17T16:17:14.671Z] [runtime-status] [2081] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:17:14.677Z] [runtime-status] [2081] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:17:14.680Z] [runtime-status] [2081] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:17:14.684Z] [runtime-status] [2081] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:17:14.687Z] [runtime-status] [2081] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:17:14.720Z] [runtime-status] [2081] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:17:14.721Z] [runtime-status] [2081] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:17:14.722Z] [runtime-status] [2081] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:17:14.722Z] [runtime-status] [2081] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:17:14.722Z] [runtime-status] [2081] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:17:14.783Z] [worker-~diagnostic~-56e3e0cb-a842-40c0-af93-20e8332ad5fb]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 218 AM PDT Sun May 17 2020"}
+[info] >  Forecast covers from Today through THU NIGHT {"user":"Forecast covers from Today through THU NIGHT"}
+[debug] [2020-05-17T16:21:04.514Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:21:05.515Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:21:05.516Z] [worker-~diagnostic~-56e3e0cb-a842-40c0-af93-20e8332ad5fb]: FINISHING 
+[debug] [2020-05-17T16:21:05.516Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:21:05.530Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:21:05.531Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:21:05.531Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:21:05.532Z] [worker-~diagnostic~-38d0deb7-1b65-47bd-b30c-97c0c056037c]: Assigning socketPath: /tmp/fire_emu_2106.sock 
+[debug] [2020-05-17T16:21:05.532Z] [worker-~diagnostic~-38d0deb7-1b65-47bd-b30c-97c0c056037c]: BUSY 
+[debug] [2020-05-17T16:21:05.534Z] [worker-~diagnostic~-56e3e0cb-a842-40c0-af93-20e8332ad5fb]: exited 
+[debug] [2020-05-17T16:21:05.534Z] [worker-~diagnostic~-56e3e0cb-a842-40c0-af93-20e8332ad5fb]: FINISHED 
+[debug] [2020-05-17T16:21:05.904Z] [runtime-status] [2106] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:21:05.909Z] [runtime-status] [2106] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:21:05.917Z] [runtime-status] [2106] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:21:05.925Z] [runtime-status] [2106] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:05.931Z] [runtime-status] [2106] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:21:05.998Z] [runtime-status] [2106] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:21:05.999Z] [runtime-status] [2106] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:06.001Z] [runtime-status] [2106] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:21:06.002Z] [runtime-status] [2106] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:06.002Z] [runtime-status] [2106] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:21:06.132Z] [worker-~diagnostic~-38d0deb7-1b65-47bd-b30c-97c0c056037c]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:21:46.258Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:21:47.259Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:21:47.259Z] [worker-~diagnostic~-38d0deb7-1b65-47bd-b30c-97c0c056037c]: FINISHING 
+[debug] [2020-05-17T16:21:47.259Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-17T16:21:47.270Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:21:47.270Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:21:47.270Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:21:47.270Z] [worker-~diagnostic~-8dc5e33d-d839-4ef8-bcea-50ecc875a44b]: Assigning socketPath: /tmp/fire_emu_2120.sock 
+[debug] [2020-05-17T16:21:47.271Z] [worker-~diagnostic~-8dc5e33d-d839-4ef8-bcea-50ecc875a44b]: BUSY 
+[debug] [2020-05-17T16:21:47.272Z] [worker-~diagnostic~-38d0deb7-1b65-47bd-b30c-97c0c056037c]: exited 
+[debug] [2020-05-17T16:21:47.272Z] [worker-~diagnostic~-38d0deb7-1b65-47bd-b30c-97c0c056037c]: FINISHED 
+[debug] [2020-05-17T16:21:47.554Z] [runtime-status] [2120] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:21:47.557Z] [runtime-status] [2120] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:21:47.565Z] [runtime-status] [2120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:21:47.566Z] [runtime-status] [2120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:47.568Z] [runtime-status] [2120] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:21:47.602Z] [runtime-status] [2120] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:21:47.603Z] [runtime-status] [2120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:47.603Z] [runtime-status] [2120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:21:47.604Z] [runtime-status] [2120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:47.604Z] [runtime-status] [2120] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  ReferenceError: g is not defined
+    at Object.<anonymous> (/home/johnsonp/src/weatherServer/functions/index.js:9:25)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /home/johnsonp/.nvm/versions/node/v14.0.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/johnsonp/.nvm/versions/node/v14.0.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-17T16:21:47.700Z] [worker-~diagnostic~-8dc5e33d-d839-4ef8-bcea-50ecc875a44b]: exited 
+[debug] [2020-05-17T16:21:47.700Z] [worker-~diagnostic~-8dc5e33d-d839-4ef8-bcea-50ecc875a44b]: FINISHED 
+[debug] [2020-05-17T16:21:55.789Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:21:56.792Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0 
+[debug] [2020-05-17T16:21:56.807Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:21:56.808Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-17T16:21:56.808Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:21:56.808Z] [worker-~diagnostic~-5910c68b-d02c-42c1-bb4c-2fc427170662]: Assigning socketPath: /tmp/fire_emu_2134.sock 
+[debug] [2020-05-17T16:21:56.809Z] [worker-~diagnostic~-5910c68b-d02c-42c1-bb4c-2fc427170662]: BUSY 
+[debug] [2020-05-17T16:21:57.186Z] [runtime-status] [2134] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:21:57.188Z] [runtime-status] [2134] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:21:57.191Z] [runtime-status] [2134] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:21:57.192Z] [runtime-status] [2134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:57.196Z] [runtime-status] [2134] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:21:57.226Z] [runtime-status] [2134] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:21:57.226Z] [runtime-status] [2134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:57.227Z] [runtime-status] [2134] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:21:57.227Z] [runtime-status] [2134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:21:57.228Z] [runtime-status] [2134] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:21:57.281Z] [worker-~diagnostic~-5910c68b-d02c-42c1-bb4c-2fc427170662]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-17T16:22:17.834Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-17T16:22:18.839Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-17T16:22:18.840Z] [worker-~diagnostic~-5910c68b-d02c-42c1-bb4c-2fc427170662]: FINISHING 
+[debug] [2020-05-17T16:22:18.854Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-17T16:22:18.855Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-17T16:22:18.855Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-17T16:22:18.855Z] [worker-~diagnostic~-b3af3e6b-b777-4f86-b3ed-d161d6be7cde]: Assigning socketPath: /tmp/fire_emu_2148.sock 
+[debug] [2020-05-17T16:22:18.856Z] [worker-~diagnostic~-b3af3e6b-b777-4f86-b3ed-d161d6be7cde]: BUSY 
+[debug] [2020-05-17T16:22:18.857Z] [worker-~diagnostic~-5910c68b-d02c-42c1-bb4c-2fc427170662]: exited 
+[debug] [2020-05-17T16:22:18.858Z] [worker-~diagnostic~-5910c68b-d02c-42c1-bb4c-2fc427170662]: FINISHED 
+[debug] [2020-05-17T16:22:19.394Z] [runtime-status] [2148] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-17T16:22:19.401Z] [runtime-status] [2148] Disabled runtime features: undefined 
+[debug] [2020-05-17T16:22:19.412Z] [runtime-status] [2148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:22:19.414Z] [runtime-status] [2148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:22:19.418Z] [runtime-status] [2148] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-17T16:22:19.486Z] [runtime-status] [2148] Checked functions.config() {"config":{}} 
+[debug] [2020-05-17T16:22:19.487Z] [runtime-status] [2148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:22:19.488Z] [runtime-status] [2148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-17T16:22:19.489Z] [runtime-status] [2148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-17T16:22:19.490Z] [runtime-status] [2148] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-17T16:22:19.614Z] [worker-~diagnostic~-b3af3e6b-b777-4f86-b3ed-d161d6be7cde]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-18T03:51:28.979Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:51:29.980Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-18T03:51:29.980Z] [worker-~diagnostic~-b3af3e6b-b777-4f86-b3ed-d161d6be7cde]: FINISHING 
+[debug] [2020-05-18T03:51:29.980Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-18T03:51:29.995Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:51:29.995Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-18T03:51:29.996Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:51:29.996Z] [worker-~diagnostic~-a2762e48-4ec9-4357-9487-cfb0854f931f]: Assigning socketPath: /tmp/fire_emu_2162.sock 
+[debug] [2020-05-18T03:51:29.996Z] [worker-~diagnostic~-a2762e48-4ec9-4357-9487-cfb0854f931f]: BUSY 
+[debug] [2020-05-18T03:51:29.998Z] [worker-~diagnostic~-b3af3e6b-b777-4f86-b3ed-d161d6be7cde]: exited 
+[debug] [2020-05-18T03:51:29.999Z] [worker-~diagnostic~-b3af3e6b-b777-4f86-b3ed-d161d6be7cde]: FINISHED 
+[debug] [2020-05-18T03:51:30.531Z] [runtime-status] [2162] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:51:30.540Z] [runtime-status] [2162] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:51:30.550Z] [runtime-status] [2162] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:51:30.552Z] [runtime-status] [2162] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:51:30.556Z] [runtime-status] [2162] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:51:30.611Z] [runtime-status] [2162] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:51:30.612Z] [runtime-status] [2162] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:51:30.613Z] [runtime-status] [2162] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:51:30.614Z] [runtime-status] [2162] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:51:30.614Z] [runtime-status] [2162] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-18T03:51:30.731Z] [worker-~diagnostic~-a2762e48-4ec9-4357-9487-cfb0854f931f]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-18T03:52:27.700Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:52:28.701Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-18T03:52:28.701Z] [worker-~diagnostic~-a2762e48-4ec9-4357-9487-cfb0854f931f]: FINISHING 
+[debug] [2020-05-18T03:52:28.701Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-18T03:52:28.711Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:52:28.712Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-18T03:52:28.712Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:52:28.712Z] [worker-~diagnostic~-fbccb66c-068f-48d9-aa6a-0e2be077017f]: Assigning socketPath: /tmp/fire_emu_2176.sock 
+[debug] [2020-05-18T03:52:28.712Z] [worker-~diagnostic~-fbccb66c-068f-48d9-aa6a-0e2be077017f]: BUSY 
+[debug] [2020-05-18T03:52:28.713Z] [worker-~diagnostic~-a2762e48-4ec9-4357-9487-cfb0854f931f]: exited 
+[debug] [2020-05-18T03:52:28.714Z] [worker-~diagnostic~-a2762e48-4ec9-4357-9487-cfb0854f931f]: FINISHED 
+[debug] [2020-05-18T03:52:29.090Z] [runtime-status] [2176] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:52:29.093Z] [runtime-status] [2176] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:52:29.096Z] [runtime-status] [2176] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:52:29.105Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:52:29.109Z] [runtime-status] [2176] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:52:29.153Z] [runtime-status] [2176] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:52:29.154Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:52:29.155Z] [runtime-status] [2176] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:52:29.157Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:52:29.157Z] [runtime-status] [2176] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-18T03:52:29.244Z] [worker-~diagnostic~-fbccb66c-068f-48d9-aa6a-0e2be077017f]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-18T03:52:44.288Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:52:45.292Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-18T03:52:45.292Z] [worker-~diagnostic~-fbccb66c-068f-48d9-aa6a-0e2be077017f]: FINISHING 
+[debug] [2020-05-18T03:52:45.292Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-18T03:52:45.303Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:52:45.304Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-18T03:52:45.304Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:52:45.304Z] [worker-~diagnostic~-7d16be75-88b5-4d32-8116-4011bf63c00c]: Assigning socketPath: /tmp/fire_emu_2190.sock 
+[debug] [2020-05-18T03:52:45.304Z] [worker-~diagnostic~-7d16be75-88b5-4d32-8116-4011bf63c00c]: BUSY 
+[debug] [2020-05-18T03:52:45.305Z] [worker-~diagnostic~-fbccb66c-068f-48d9-aa6a-0e2be077017f]: exited 
+[debug] [2020-05-18T03:52:45.305Z] [worker-~diagnostic~-fbccb66c-068f-48d9-aa6a-0e2be077017f]: FINISHED 
+[debug] [2020-05-18T03:52:45.652Z] [runtime-status] [2190] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:52:45.657Z] [runtime-status] [2190] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:52:45.663Z] [runtime-status] [2190] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:52:45.665Z] [runtime-status] [2190] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:52:45.668Z] [runtime-status] [2190] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:52:45.713Z] [runtime-status] [2190] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:52:45.714Z] [runtime-status] [2190] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:52:45.715Z] [runtime-status] [2190] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:52:45.716Z] [runtime-status] [2190] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:52:45.716Z] [runtime-status] [2190] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-18T03:52:45.795Z] [worker-~diagnostic~-7d16be75-88b5-4d32-8116-4011bf63c00c]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-18T03:53:41.809Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:53:42.809Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-18T03:53:42.810Z] [worker-~diagnostic~-7d16be75-88b5-4d32-8116-4011bf63c00c]: FINISHING 
+[debug] [2020-05-18T03:53:42.810Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-18T03:53:42.821Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:53:42.821Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-18T03:53:42.821Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:53:42.822Z] [worker-~diagnostic~-68f10b47-7903-4995-8f54-16a97691519f]: Assigning socketPath: /tmp/fire_emu_2204.sock 
+[debug] [2020-05-18T03:53:42.822Z] [worker-~diagnostic~-68f10b47-7903-4995-8f54-16a97691519f]: BUSY 
+[debug] [2020-05-18T03:53:42.823Z] [worker-~diagnostic~-7d16be75-88b5-4d32-8116-4011bf63c00c]: exited 
+[debug] [2020-05-18T03:53:42.823Z] [worker-~diagnostic~-7d16be75-88b5-4d32-8116-4011bf63c00c]: FINISHED 
+[debug] [2020-05-18T03:53:43.158Z] [runtime-status] [2204] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:53:43.163Z] [runtime-status] [2204] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:53:43.170Z] [runtime-status] [2204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:53:43.171Z] [runtime-status] [2204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:53:43.174Z] [runtime-status] [2204] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:53:43.216Z] [runtime-status] [2204] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:53:43.217Z] [runtime-status] [2204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:53:43.218Z] [runtime-status] [2204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:53:43.218Z] [runtime-status] [2204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:53:43.219Z] [runtime-status] [2204] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /home/johnsonp/src/weatherServer/functions/index.js:36
+            );
+            ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1101:16)
+    at Module._compile (internal/modules/cjs/loader.js:1149:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /home/johnsonp/.nvm/versions/node/v14.0.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/johnsonp/.nvm/versions/node/v14.0.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-18T03:53:43.237Z] [worker-~diagnostic~-68f10b47-7903-4995-8f54-16a97691519f]: exited 
+[debug] [2020-05-18T03:53:43.237Z] [worker-~diagnostic~-68f10b47-7903-4995-8f54-16a97691519f]: FINISHED 
+[debug] [2020-05-18T03:53:46.336Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:53:47.337Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0 
+[debug] [2020-05-18T03:53:47.347Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:53:47.348Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-18T03:53:47.348Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:53:47.348Z] [worker-~diagnostic~-754c4b87-6804-4db6-9997-9b7e7cbcf845]: Assigning socketPath: /tmp/fire_emu_2218.sock 
+[debug] [2020-05-18T03:53:47.348Z] [worker-~diagnostic~-754c4b87-6804-4db6-9997-9b7e7cbcf845]: BUSY 
+[debug] [2020-05-18T03:53:47.707Z] [runtime-status] [2218] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:53:47.710Z] [runtime-status] [2218] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:53:47.713Z] [runtime-status] [2218] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:53:47.715Z] [runtime-status] [2218] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:53:47.731Z] [runtime-status] [2218] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:53:47.776Z] [runtime-status] [2218] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:53:47.778Z] [runtime-status] [2218] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:53:47.779Z] [runtime-status] [2218] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:53:47.779Z] [runtime-status] [2218] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:53:47.780Z] [runtime-status] [2218] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-18T03:53:47.862Z] [worker-~diagnostic~-754c4b87-6804-4db6-9997-9b7e7cbcf845]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[info] >  New request received {"user":"New request received"}
+[info] >  Refreshed marine forecast, updated by NOAA at: 126 PM PDT Sun May 17 2020 {"user":"Refreshed marine forecast, updated by NOAA at: 126 PM PDT Sun May 17 2020"}
+[info] >  Forecast covers from Tonight through Friday Night {"user":"Forecast covers from Tonight through Friday Night"}
+[debug] [2020-05-18T03:55:50.705Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:55:51.706Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-18T03:55:51.706Z] [worker-~diagnostic~-754c4b87-6804-4db6-9997-9b7e7cbcf845]: FINISHING 
+[debug] [2020-05-18T03:55:51.724Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:55:51.725Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-18T03:55:51.725Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:55:51.725Z] [worker-~diagnostic~-6a7f087a-f488-477f-9042-ece8fcd09939]: Assigning socketPath: /tmp/fire_emu_2243.sock 
+[debug] [2020-05-18T03:55:51.726Z] [worker-~diagnostic~-6a7f087a-f488-477f-9042-ece8fcd09939]: BUSY 
+[debug] [2020-05-18T03:55:51.727Z] [worker-~diagnostic~-754c4b87-6804-4db6-9997-9b7e7cbcf845]: exited 
+[debug] [2020-05-18T03:55:51.728Z] [worker-~diagnostic~-754c4b87-6804-4db6-9997-9b7e7cbcf845]: FINISHED 
+[debug] [2020-05-18T03:55:52.247Z] [runtime-status] [2243] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:55:52.252Z] [runtime-status] [2243] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:55:52.258Z] [runtime-status] [2243] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:55:52.266Z] [runtime-status] [2243] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:55:52.271Z] [runtime-status] [2243] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:55:52.338Z] [runtime-status] [2243] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:55:52.340Z] [runtime-status] [2243] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:55:52.341Z] [runtime-status] [2243] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:55:52.342Z] [runtime-status] [2243] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:55:52.342Z] [runtime-status] [2243] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-18T03:55:52.471Z] [worker-~diagnostic~-6a7f087a-f488-477f-9042-ece8fcd09939]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
+[debug] [2020-05-18T03:56:01.186Z] File /home/johnsonp/src/weatherServer/functions/index.js changed, reloading triggers 
+[debug] [2020-05-18T03:56:02.187Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-18T03:56:02.187Z] [worker-~diagnostic~-6a7f087a-f488-477f-9042-ece8fcd09939]: FINISHING 
+[debug] [2020-05-18T03:56:02.187Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-18T03:56:02.203Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-18T03:56:02.204Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-18T03:56:02.205Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-18T03:56:02.205Z] [worker-~diagnostic~-f99b9156-fa7d-4814-974e-7a7d0f164231]: Assigning socketPath: /tmp/fire_emu_2257.sock 
+[debug] [2020-05-18T03:56:02.205Z] [worker-~diagnostic~-f99b9156-fa7d-4814-974e-7a7d0f164231]: BUSY 
+[debug] [2020-05-18T03:56:02.207Z] [worker-~diagnostic~-6a7f087a-f488-477f-9042-ece8fcd09939]: exited 
+[debug] [2020-05-18T03:56:02.207Z] [worker-~diagnostic~-6a7f087a-f488-477f-9042-ece8fcd09939]: FINISHED 
+[debug] [2020-05-18T03:56:02.651Z] [runtime-status] [2257] Functions runtime initialized. {"cwd":"/home/johnsonp/src/weatherServer/functions","node_version":"14.0.0"} 
+[debug] [2020-05-18T03:56:02.657Z] [runtime-status] [2257] Disabled runtime features: undefined 
+[debug] [2020-05-18T03:56:02.666Z] [runtime-status] [2257] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:56:02.667Z] [runtime-status] [2257] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:56:02.672Z] [runtime-status] [2257] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-18T03:56:02.724Z] [runtime-status] [2257] Checked functions.config() {"config":{}} 
+[debug] [2020-05-18T03:56:02.725Z] [runtime-status] [2257] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:56:02.727Z] [runtime-status] [2257] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-18T03:56:02.728Z] [runtime-status] [2257] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-18T03:56:02.729Z] [runtime-status] [2257] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/home/johnsonp/src/weatherServer/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-18T03:56:02.814Z] [worker-~diagnostic~-f99b9156-fa7d-4814-974e-7a7d0f164231]: IDLE 
+[info] >  Starting server... {"user":"Starting server..."}
